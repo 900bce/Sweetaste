@@ -1,0 +1,204 @@
+
+.header-img {
+  max-width: 92%;
+  height: 41.5rem;
+  margin: 0 auto;
+  background-image: url(https://bit.ly/2OhbMHr);
+  background-size: cover;
+  background-position: center;
+}
+
+.select {
+  display: flex;
+  justify-content: center;
+  margin-top: -8rem;
+
+  .select__box {
+    width: 21.5rem;
+    height: 21.5rem;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border: 1px solid $color-green-light;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      filter: blur(5px);
+    }  
+
+    &--1::before {
+      background-image: url(https://bit.ly/2R5tqwD);
+    }
+
+    &--2::before {
+      background-image: url(https://bit.ly/2Dwoxd7);
+    }
+
+    &--3:before {
+      background-image: url(https://bit.ly/2OUteif);
+    }
+
+    .select__text {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($color-primary, .7);
+      font-size: 2rem;
+      font-weight: 200;
+      color: $color-white;
+      writing-mode: vertical-lr;
+      text-orientation: upright;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &--1 {
+        background-color: rgba($color-yellow, .7);
+        color: $color-primary;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.why {
+  height: 35rem;
+  width: 100%;
+  background-color: $color-green-light;
+  margin-top: 6.666rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3.5rem;
+
+  &--1 {
+    flex-direction: row-reverse;
+  }
+
+  &__text-box {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+    img {
+      width: 7.5rem;
+      align-self: flex-start;
+      margin-top: -1.666rem;
+      margin-left: 6rem;
+    }
+
+    .why__text {
+      color: $color-green-medium;
+      font-size: 1.33rem;
+      writing-mode: vertical-lr;
+      text-orientation: upright;
+      height: 26rem;
+      align-self: center;
+      line-height: 3;
+    }
+  }
+
+  .why__image {
+    width: 38.333rem;
+    height: 38.333rem;
+    background-size: cover;
+    margin-top: -1.666rem;
+    
+    &--1 {
+      background-image: url(https://bit.ly/2xPn7Eq);
+    }
+
+    &--2 {
+      background-image: url(https://bit.ly/2zzAQS4);
+    }
+  }
+}
+
+.quote img {
+  height: 27.5rem;
+  margin: 7.5rem auto;
+  display: block;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3rem ;
+
+  .card {
+    width: 32%;
+
+    &__picture {
+      width: 100%;
+      height: 26.25rem;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      &--1 {
+        background-image: url(https://bit.ly/2zBjQuq);
+      }
+      &--2 {
+        background-image: url(https://bit.ly/2QbVsVR);
+      }
+      &--3 {
+        background-image: url(https://bit.ly/2zBDAxX);
+      }
+
+      .sticker {
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+        color: $color-green-light;
+        background: $color-primary;
+        font-size: 1.33rem;
+        padding: .8rem;
+        position: absolute;
+        top: 0;
+        left: 1rem;
+      }
+
+      .like-btn {
+        color: $color-primary;
+        font-size: 1.33rem;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 1.66rem;
+        font-weight: 800;
+        cursor: pointer;
+      }
+    }
+
+    &__desc {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border: 1px solid $color-green-light;
+      font-size: 1.66rem;
+      color: $color-primary;
+      
+
+      .card__price {
+        max-width: 40%;
+        border-left: 1px solid $color-green-light;
+        padding: 1rem 0 1rem 2rem;
+        font-weight: 600;
+      }
+    }
+
+    &__button {
+      width: 100%;
+      font-size: 2rem;
+      font-weight: 500;
+      color: $color-primary;
+      border: none;
+      padding: 1rem;
+      background-color: $color-green-light;
+    }
+  }
+}

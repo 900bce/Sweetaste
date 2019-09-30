@@ -1,0 +1,94 @@
+.subscribe {
+  margin-top: 6rem;
+  width: 100%;
+  height: 10rem;
+  background: $color-primary;
+
+  &-content {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 3.33rem;
+    height: auto;
+    vertical-align: middle;
+  }
+
+  &__text {
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: $color-green-light;
+    font-weight: 200;
+    vertical-align: middle;
+  }
+
+  &__form {
+    background-color: $color-green-light;
+    color: $color-primary;
+    position: relative;
+
+    .material-icons {
+      padding-left: 1.5rem;
+      font-size: 2.5rem;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__input {
+    border: none;
+    outline: none;
+    padding: .5rem;
+    font-size: 1.8rem;
+    background: $color-green-light;
+  }
+
+  &__button {
+    border: none;
+    font-size: 1.8rem;
+    color: $color-primary;
+    padding: 1.5rem 1.6rem;
+    background: $color-yellow;
+  }
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  color: $color-primary;
+  background-color: $color-green-light;
+  padding: 2.5rem 10rem;
+
+  .footer__logo {
+    width: 14rem;
+    margin-bottom: 10rem;
+  }
+
+  .footer__contact-info {
+    font-size: 1.33rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .footer__sns-icon {
+    width: 2.5rem;
+  }
+
+  .footer__side--right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .footer__quote {
+      height: 18rem;
+      margin-bottom: 3.86rem;
+    }
+  
+    .footer__rights {
+      font-size: 1.33rem;
+    }
+  }
+}
