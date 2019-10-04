@@ -217,7 +217,7 @@ body {
   .subscribe__input {
     border: none;
     outline: none;
-    padding: .5rem;
+    padding-left: 4rem;
     font-size: 1.8rem;
     background: #EAF0ED; }
   .subscribe__button {
