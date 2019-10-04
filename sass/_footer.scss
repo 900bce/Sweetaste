@@ -4,11 +4,13 @@
   height: 10rem;
   background: $color-primary;
 
-  &-content {
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  @include respond(phone) {
+    flex-direction: column;
+    height: 15.5rem;
   }
 
   &__logo {
@@ -53,6 +55,7 @@
     color: $color-primary;
     padding: 1.5rem 1.6rem;
     background: $color-yellow;
+    cursor: pointer;
   }
 }
 
@@ -62,6 +65,11 @@
   color: $color-primary;
   background-color: $color-green-light;
   padding: 2.5rem 10rem;
+
+  @include respond(phone) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
   .footer__logo {
     width: 14rem;
@@ -85,6 +93,10 @@
     .footer__quote {
       height: 18rem;
       margin-bottom: 3.86rem;
+
+      @include respond(phone) {
+        display: none;
+      }
     }
   
     .footer__rights {

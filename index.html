@@ -10,15 +10,26 @@
 </head>
 <body>
   <nav class="navbar">
+    <input type="checkbox" class="navbar__checkbox" id="nav-toggle">
+
+    <label for="nav-toggle" class="navbar__button">
+      <span class="navbar__icon">&nbsp;</span>
+    </label>
+
     <div class="navbar__brand">
-      <img src="./img/logo-all-dark.svg" alt="">
+      <picture>
+        <source media="(max-width: 37.5em)" srcset="./img/logotype-sm-dark.svg">
+        <img src="./img/logo-all-dark.svg" alt="Brand logo">
+      </picture>
     </div>
-    <ul class="navbar__menu">
-      <li class="navbar-menu__items"><a href="#">首頁</a></li>
-      <li class="navbar-menu__items"><a href="#">甜點</a></li>
-      <li class="navbar-menu__items"><a href="#">登入</a></li>
-      <li class="navbar-menu__items"><a href="#"><i class="material-icons">shopping_cart</i></a></li>
-    </ul>
+    <div class="navbar__links">
+      <ul class="navbar__menu">
+        <li><a href="#">首頁</a></li>
+        <li><a href="#">甜點</a></li>
+        <li><a href="#">登入</a></li>
+      </ul>
+      <a class="navbar__cart" href="#"><i class="material-icons">shopping_cart</i></a>
+    </div>
   </nav>
   
   <main>
@@ -37,31 +48,34 @@
     </div>
 
     <div class="why why--1">
-      <div class="why__text-box">
+      <picture>
+        <source media="(max-width: 56.25em)" srcset="./img/sm-橫式-為什麼選擇了做甜點.svg">
         <img src="./img/lg-為什麼選擇了做甜點.svg" alt="為什麼選擇了做甜點">
-        <div class="why__text">
-          <p>青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。</p>
-          <p>是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。</p>
-        </div>
-      </div>
-      <div class="why__image why__image--1">
+      </picture>
+      <div class="why__image why__image--1">&nbsp;</div>
+      <div class="why__text">
+        <p>青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。</p>
+        <p>是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。</p>
       </div>
     </div>
 
     <div class="why why--2">
-      <div class="why__text-box">
+      <picture>
+        <source media="(max-width: 56.25em)" srcset="./img/sm-橫式-為什麼一定要吃甜點.svg">
         <img src="./img/lg-為什麼一定要吃甜點.svg" alt="為什麼一定要吃甜點">
-        <div class="why__text">
-          <p>青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。</p>
-          <p>是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。</p>
-        </div>
-      </div>
-      <div class="why__image why__image--2">
+      </picture>
+      <div class="why__image why__image--2">&nbsp;</div>
+      <div class="why__text">
+        <p>青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。</p>
+        <p>是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。</p>
       </div>
     </div>
 
     <div class="quote">
-      <img src="./img/lg-想吃甜點是不需要理由的.svg" alt="想吃甜點是不需要理由的">
+      <picture>
+        <source media="(max-width: 37.5em)" srcset="./img/sm-橫式-想吃甜點是不需要理由的.svg">
+        <img src="./img/lg-想吃甜點是不需要理由的.svg" alt="想吃甜點是不需要理由的">
+      </picture>
     </div>
 
     <div class="product">
@@ -102,18 +116,17 @@
 
     <footer>
       <div class="subscribe">
-        <div class="subscribe-content">
-          <div>
-            <img src="./img/logo-light.svg" alt="logo" class="subscribe__logo">
-            <span class="subscribe__text">訂閱你我的甜蜜郵件</span>
-          </div>
-          <div class="subscribe__form">
-            <i class="material-icons">email</i>
-            <input type="email" class="subscribe__input">
-            <button class="subscribe__button">&rarr;</button>
-          </div>
+        <div>
+          <img src="./img/logo-light.svg" alt="logo" class="subscribe__logo">
+          <span class="subscribe__text">訂閱你我的甜蜜郵件</span>
+        </div>
+        <div class="subscribe__form">
+          <i class="material-icons">email</i>
+          <input type="email" class="subscribe__input">
+          <button class="subscribe__button">&rarr;</button>
         </div>
       </div>
+      
       <div class="footer-content">
         <div class="footer__side">
           <img class="footer__logo" src="./img/logotype-sm-dark.svg" alt="logo">
