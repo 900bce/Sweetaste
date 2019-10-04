@@ -133,6 +133,12 @@
 
   .card {
     width: 32%;
+    transition: .3s;
+
+    &:hover {
+      transform: translateY(-1rem);
+      box-shadow: 0 5px 15px $color-primary;
+    }
 
     &__picture {
       width: 100%;
@@ -199,6 +205,7 @@
       border: none;
       padding: 1rem;
       background-color: $color-green-light;
+      cursor: pointer;
     }
   }
 }

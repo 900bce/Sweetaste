@@ -131,7 +131,11 @@ body {
   justify-content: space-between;
   padding: 0 3rem; }
   .product .card {
-    width: 32%; }
+    width: 32%;
+    transition: .3s; }
+    .product .card:hover {
+      transform: translateY(-1rem);
+      box-shadow: 0 5px 15px #3F5D45; }
     .product .card__picture {
       width: 100%;
       height: 26.25rem;
@@ -182,7 +186,8 @@ body {
       color: #3F5D45;
       border: none;
       padding: 1rem;
-      background-color: #EAF0ED; }
+      background-color: #EAF0ED;
+      cursor: pointer; }
 
 .subscribe {
   margin-top: 6rem;
