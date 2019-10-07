@@ -37,6 +37,10 @@
       text-decoration: none;
       font-size: 1.6rem;
       font-weight: 500;
+
+      &:hover {
+        color: $color-green-medium;
+      }
     }
   }
 

@@ -20,6 +20,11 @@
     cursor: pointer;
     overflow: hidden;
     border: 1px solid $color-green-light;
+    transition: all .3s;
+
+    &:hover {
+      filter: brightness(.8);
+    }
 
     &::before {
       content: "";
@@ -160,7 +165,7 @@
 
   .card {
     width: 32%;
-    transition: .3s;
+    box-shadow: 0 0 10px $color-green-medium;
 
     @include respond(phone) {
       width: 100%;
@@ -168,11 +173,6 @@
       & ~ .card {
         display: none;
       }
-    }
-
-    &:hover {
-      transform: translateY(-1rem);
-      box-shadow: 0 5px 15px $color-primary;
     }
 
     &__picture {
@@ -241,6 +241,12 @@
       padding: 1rem;
       background-color: $color-green-light;
       cursor: pointer;
+      transition: background-color .1s;
+
+      &:hover {
+        // filter: brightness(.9);
+        background-color: rgba($color-green-medium, .5);
+      }
     }
   }
 }
